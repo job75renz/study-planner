@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Study Planner</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<div class="container">
+
+  <div class="sidebar">
+    <h2>📘 Planner</h2>
+  </div>
+
+  <div class="main">
+
+    <h1>Study Planner Dashboard </h1>
+
+    <div class="cards">
+      <div class="card">Total <span id="total">0</span></div>
+      <div class="card">Done <span id="done">0</span></div>
+      <div class="card">Pending <span id="pending">0</span></div>
+    </div>
+
+    <div class="progress">
+      <div id="progressBar"></div>
+    </div>
+
+    <canvas id="myChart" width="300" height="300"></canvas>
+
+    <div class="add-box">
+      <input id="subject" placeholder="Subject">
+      <input id="task" placeholder="Task">
+      <input id="deadline" type="date">
+      <button onclick="addTask()">Add</button>
+    </div>
+
+    <h3>📅 Today's Tasks</h3>
+    <div id="todayTasks"></div>
+
+    <h3>📅 Weekly Planner</h3>
+    <div id="planner"></div>
+
+    <h3>📋 All Tasks</h3>
+    <div id="taskList"></div>
+
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
